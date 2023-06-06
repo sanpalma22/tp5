@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-namespace Tp4.Models;
+namespace tp5.Models;
 
 static class Escape
 {
     private static string[] solucionesSalas;
-    private static int estadoJuego=0;
+    private static int estadoJuego=1;
     private static void InicializarJuego(){
         solucionesSalas=new string[]{"RLRO","SMARIRTS","KMMGZBPB","FABBIANI"};
     }
