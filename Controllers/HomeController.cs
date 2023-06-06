@@ -18,11 +18,15 @@ public class HomeController : Controller
     public IActionResult Comenzar()
     {
         int val = Escape.GetEstadoJuego();
+        ViewBag.numSala=val;
         return View("Habitacion"+ val);
     }
-   /* public IActionResult Habitacion()
+    public IActionResult Habitacion(int sala, string clave)
     {
-
-    }*/
+        bool correcto=Escape.ResolverSala(sala,clave);
+        if(correcto){
+            return View("Habitacion"+Escape.GetEstadoJuego());
+        }else return View("Habitacion"+sala);
+    }
 
 }

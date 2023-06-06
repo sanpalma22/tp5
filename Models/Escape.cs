@@ -12,7 +12,9 @@ static class Escape
         return estadoJuego;
     }
     public static bool ResolverSala(int numSala,string respuesta){
+        if(solucionesSalas==null)InicializarJuego();
         bool correcto=solucionesSalas[numSala]==respuesta;
+        if (correcto) estadoJuego++;
         return correcto;
     }
 
