@@ -12,21 +12,28 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Creditos(){
+    public IActionResult Creditos()
+    {
         return View();
     }
     public IActionResult Comenzar()
     {
-        int val = Escape.GetEstadoJuego();
-        ViewBag.numSala=val;
-        return View("Habitacion"+ val);
+        return View("Habitacion" + Escape.GetEstadoJuego());
     }
     public IActionResult Habitacion(int sala, string clave)
     {
-        bool correcto=Escape.ResolverSala(sala,clave);
-        if(correcto){
-            return View("Habitacion"+Escape.GetEstadoJuego());
-        }else return View("Habitacion"+sala);
+        if (sala == Escape.GetEstadoJuego())
+        {
+            bool correcto = Escape.ResolverSala(sala, clave);
+            if (correcto)
+            {
+                return View("Habitacion" + Escape.GetEstadoJuego());
+            }
+            else return View("Habitacion" + sala);
+        }
+
+        else return View("Habitacion" + Escape.GetEstadoJuego());
+
     }
 
 }
