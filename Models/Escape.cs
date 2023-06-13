@@ -6,7 +6,7 @@ static class Escape
     private static string[] solucionesSalas;
     private static int estadoJuego=1;
     private static void InicializarJuego(){
-        solucionesSalas=new string[]{"RLRO","SMARIRTS","KMMGZBPB","FABBIANI"};
+        solucionesSalas=new string[]{"RLZO","SMARIRTS","KMMGZBPB","FABBIANI"};
     }
     public static int GetEstadoJuego(){
         return estadoJuego;
