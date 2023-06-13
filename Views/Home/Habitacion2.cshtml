@@ -1,5 +1,12 @@
 <h1>SALA 2</h1>
-<form action='@Url.Action("Habitacion",new {sala=2})'>
+<ol>
+    <li><img src="/imagenes/sanMartin.PNG" alt=""></li>
+    <li><img src="/imagenes/rafaela.PNG" alt=""></li>
+    <li><img src="/imagenes/indRivadavia.PNG" alt=""></li>
+    <li><img src="/imagenes/tristanSuarez.PNG" alt=""></li>
+</ol>
+<form action='@Url.Action("Habitacion","Home")'>
+    <input type="hidden" name="sala" value="2">
     <input type="text" name="clave">
     <input type="submit">
 </form>

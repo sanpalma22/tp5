@@ -22,17 +22,16 @@ public class HomeController : Controller
     }
     public IActionResult Habitacion(int sala, string clave)
     {
-        if (sala == Escape.GetEstadoJuego())
-        {
-            bool correcto = Escape.ResolverSala(sala, clave);
+        
+            bool correcto = Escape.ResolverSala(sala -1, clave);
             if (correcto)
             {
                 return View("Habitacion" + Escape.GetEstadoJuego());
             }
             else return View("Habitacion" + sala);
-        }
 
-        else return View("Habitacion" + Escape.GetEstadoJuego());
+
+       // else return View("Habitacion" + Escape.GetEstadoJuego());
 
     }
 
