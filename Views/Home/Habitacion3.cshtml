@@ -1,5 +1,11 @@
 <h1>SALA 3</h1>
-<form action='@Url.Action("Habitacion","Home")'>
+<p>En esta sala deberás adivinar de qué jugadores son estos cuatro golazos.</p>
+<p> - Deberás escribir la inicial del apellido de cada jugador, escrito todos juntos .</p>
+<video src="/videos/calleri.mp4" controls></video>
+<video src="/videos/chilavert.mp4" controls></video>
+<video src="/videos/lisandro.mp4" controls></video>
+<video src="/videos/pity.mp4" controls></video>
+<form action='@Url.Action("Habitacion","Home")' method="post">
     <input type="hidden" name="sala" value="3">
     <input type="text" name="clave">
     <input type="submit">

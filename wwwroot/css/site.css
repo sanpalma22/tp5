@@ -1,17 +1,8 @@
-html {
-  font-size: 14px;
-  position: relative;
-  min-height: 100%;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 body {
   margin: 20px 60px 0px 20px;
+  background-image: url("/imagenes/pelota.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
