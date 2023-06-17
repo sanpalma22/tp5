@@ -2,10 +2,13 @@
     ViewData["Title"] = "Index";
 }
 <header>
-    <a href='@Url.Action("Index","Home")'><img src="/imagenes/afa.png" alt=""></a>
+    <div class="logo">
+        <a href='@Url.Action("Index","Home")'><img src="/imagenes/afa.png" alt=""></a>
+        <h1>Scape Room Futbol</h1>
+    </div>
+    
     <nav>
         <ul>
-            <li>Futbol argentino SCAPE ROOM</li>
             <li><a href='@Url.Action("Comenzar","Home")'>Jugar!</a></li>
             <li><a href='@Url.Action("Tutorial","Home")'>Tutorial</a></li>
             <li><a href='@Url.Action("Creditos","Home")'>Créditos</a></li>
@@ -16,5 +19,3 @@
     <source src="/videos/intro.mp3" type="audio/mpeg">
 </audio>
 <img class="banner" src="/imagenes/futbolArg.jpg" alt="">
-
-
