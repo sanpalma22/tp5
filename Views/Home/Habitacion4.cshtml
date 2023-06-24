@@ -1,9 +1,12 @@
 <h2>SALA 4</h2>
-<p>Buscá a los jugadores de la selección escondidos en la sopa de letras. Hay palabras en sentido horizontal, vertical y diagonal.</p>
-<p><p> - Deberás escribir la inicial de cada jugador, ordenados alfabéticamente. </p></p>
+<h2>Sopa de letras</h2>
+<p>Buscá a los jugadores de la selección escondidos en la sopa de letras. Hay palabras en sentido horizontal, vertical y diagonal. <br>
+ - Deberás escribir la inicial de cada jugador, ordenados alfabéticamente.</p>
 <iframe width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/15301046-seleccion.html"></iframe>
 <form action='@Url.Action("Habitacion","Home")' method="post">
     <input type="hidden" name="sala" value="4">
-    <input type="text" name="clave">
-    <input type="submit">
+    <div class="inputClave">
+        <input type="text" name="clave" autocomplete="off"> <br>
+        <input type="submit" value="Enviar solución">
+    </div>
 </form>

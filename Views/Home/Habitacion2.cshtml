@@ -1,7 +1,9 @@
 <h2>SALA 2</h2>
-<p>En esta sala tendras que descubrir cuáles son los siguientes equipos por sus escudos.</p>
-<p> - Deberás escribir la inicial del apellido de cada jugador, escrito todos juntos. </p>
-<p>ACLARACIÓN: Si el nombre tiene más de una palabra, escribir solo la inicial de la primera.</p> 
+<h2>Escudos escondidos</h2>
+<p>En esta sala tendras que descubrir cuáles son los siguientes equipos por sus escudos. <br>
+ - Deberás escribir la inicial del apellido de cada jugador, escrito todos juntos. <br>
+ACLARACIÓN: Si el nombre tiene más de una palabra, escribir solo la inicial de la primera.</p>
+<div class="cuadros">
 <div>
   <h3>1.</h3>
   <img src="/imagenes/sanMartin.PNG">
@@ -18,8 +20,12 @@
   <h3>4.</h3>
   <img src="/imagenes/tristanSuarez.PNG">
 </div>
+</div> 
+
 <form action='@Url.Action("Habitacion","Home")' method="post">
     <input type="hidden" name="sala" value="2">
-    <input type="text" name="clave">
-    <input type="submit">
+    <div class="inputClave">
+        <input type="text" name="clave" autocomplete="off"> <br>
+        <input type="submit" value="Enviar solución">
+    </div>
 </form>

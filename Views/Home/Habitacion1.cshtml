@@ -1,60 +1,63 @@
 <h2>SALA 1</h2>
 <h2>Trayectorias</h2>
-<p>En esta sala deberás adivinar de qué jugadores son las siguientes cuatro trayectorias.</p>
-<p> - Deberás escribir la inicial del apellido de cada jugador, escrito todos juntos .</p>
-<div>
-    <h3>1.</h3>
-    <ol>
-        <li>Argentinos Juniors</li>
-        <li>Boca</li>
-        <li>Barcelona</li>
-        <li>Villareal</li>
-        <li>Boca</li>
-        <li>Argentinos</li>
-    </ol>
+<p>En esta sala deberás adivinar de qué jugadores son las siguientes cuatro
+    trayectorias. <br>
+    - Deberás escribir la inicial del apellido de cada jugador, escrito todos
+    juntos .</p>
+<div class="cuadros">
+    <div>
+        <h3>1.</h3>
+        <ol>
+            <li>Argentinos Juniors</li>
+            <li>Boca</li>
+            <li>Barcelona</li>
+            <li>Villareal</li>
+            <li>Boca</li>
+            <li>Argentinos Juniors</li>
+        </ol>
+    </div>
+    <div>
+        <h3>2.</h3>
+        <ol>
+            <li>Racing</li>
+            <li>Porto</li>
+            <li>Olympique de Lyon</li>
+            <li>Al-Gharafa</li>
+            <li>Internacional</li>
+            <li>Racing Club</li>
+            <li>Atlanta United</li>
+            <li>Racing Club</li>
+            <li>Sarmiento</li>
+        </ol>
+    </div>
+    <div>
+        <h3>3.</h3>
+        <ol>
+            <li>Talleres de Remedios de Escalada</li>
+            <li>Banfield</li>
+            <li>Inter</li>
+        </ol>
+    </div>
+    <div>
+        <h3>4.</h3>
+        <ol>
+            <li>Argentinos Juniors</li>
+            <li>Chicago</li>
+            <li>Argentinos Juniors</li>
+            <li>San Lorenzo</li>
+            <li>Emirates Club</li>
+            <li>San Lorenzo</li>
+            <li>Olimpia</li>
+            <li>Rosario Central</li>
+            <li>Estudiantes de Río Cuarto</li>
+            <li>San Lorenzo</li>
+        </ol>
+    </div>
 </div>
-<div>
-    <h3>2.</h3>
-    <ol>
-        <li>Racing</li>
-        <li>Porto</li>
-        <li>Olympique de Lyon</li>
-        <li>Al-Gharafa</li>
-        <li>Internacional</li>
-        <li>Racing Club</li>
-        <li>Atlanta United</li>
-        <li>Racing Club</li>
-        <li>Sarmiento</li>
-    </ol>
-</div>
-<div>
-    <h3>3.</h3>
-    <ol>
-        <li>Talleres de Remedios de Escalada</li>
-        <li>Banfield</li>
-        <li>Inter</li>
-    </ol>
-</div>
-<div>
-    <h3>4.</h3>
-    <ol>
-        <li>Argentinos Juniors</li>
-        <li>Chicago</li>
-        <li>Argentinos Juniors</li>
-        <li>San Lorenzo</li>
-        <li>Emirates Club</li>
-        <li>San Lorenzo</li>
-        <li>Olimpia</li>
-        <li>Rosario Central</li>
-        <li>Estudiantes de Río Cuarto</li>
-        <li>San Lorenzo</li>
-    </ol>
-</div>
-<ol>
-
-</ol>
 <form action='@Url.Action("Habitacion","Home")' method="post">
     <input type="hidden" name="sala" value="1">
-    <input type="text" name="clave">
-    <input type="submit" value="Enviar solución">
+    <div class="inputClave">
+        <input type="text" name="clave" autocomplete="off"> <br>
+        <input type="submit" value="Enviar solución">
+    </div>
 </form>

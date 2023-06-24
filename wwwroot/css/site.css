@@ -1,22 +1,25 @@
-*{
-  margin:0%;
+* {
+  margin: 0%;
   padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body,html {
+body{
   background-image: url("/imagenes/pelota.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  background-position: centerNavegacion;
 }
 
 header {
   display: flex;
   align-items: center;
-  padding: 10px;;
+  padding: 10px;
   background-color: #048eff;
   height: 70px;
   margin-bottom: 30px;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
   font-size: 10px;
@@ -29,11 +32,10 @@ header {
 nav {
   height: 50px;
 }
-nav ul{
+nav ul {
   height: 100%;
   display: flex;
   align-items: center;
-  
 }
 
 a {
@@ -42,21 +44,97 @@ a {
   height: 100%;
   font-weight: bold;
 }
-li {
+ul li {
   list-style: none;
- 
 }
 nav li {
   color: #02096b;
-  padding: 5px; 
+  padding: 5px;
+  margin-right: 50px;
   display: inline-block;
- 
 }
-.banner{
+.banner {
   width: 90%;
   margin-left: 5%;
 }
-
-h2{
-  
+.botonesNavegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botonesNavegacion a {
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  width: 30%;
+  padding: 10px 0px;
+  background-color: #4caf4fd7;
+  border: 3px solid rgb(7, 85, 0);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 40px;
+}
+h2 {
+  background-color: #048eff;
+  text-align: center;
+}
+p{
+  width: 60%;
+  margin: 10px 20% 10px 20%;
+  padding: 10px;
+  font-size: large;
+  background-color: rgba(128, 255, 0, 0.781);
+}
+.cuadros{
+  display: inline-block;
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.cuadros div{
+  width: 20%;
+  background-image: url("/imagenes/fondoCuadros.png");
+  background-position: center;
+  border: 3px solid rgb(255, 255, 255); 
+  border-radius: 5px;
+  padding: 10px 10px 10px 30px;
+}
+.cuadros img{
+  height: 80%;
+}
+.inputClave{
+  margin: 10px;
+  text-align: center;
+}
+input[type="text"] {
+  padding: 5px; 
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+input[type="submit"] {
+  background-color: #4caf4f;
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: 1px solid rgb(7, 85, 0);
+  border-radius: 4px; 
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #36793a; 
+}
+.videos{
+  text-align: center;
+}
+video{
+  width: 50%;
+}
+iframe{
+  width: 60%;
+  margin-left: 20%;
+}
+.ganaste{
+  background-image: url("/imagenes/campeon.gif");
 }
